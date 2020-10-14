@@ -1,0 +1,39 @@
+body{
+    font-family: 'Calibri Light', Calibri, sans-serif;
+    background-color: #B6A19E;
+    text-align:center;
+}
+.guess{
+    color:blue;
+    font-weight: bold;
+}
+input[type=text]{
+    height: 3em;
+    width:  3em;
+    border-radius: 5px;
+}
+.encoded{
+    background-color: lightgrey;
+    margin-right:0.2em;
+    text-align: center;
+    border-radius: 5px;
+}
+#code{
+    display:grid;
+    grid-template-columns: repeat(15, 1fr);
+    /*column-gap: 10px;*/
+    row-gap: 10px;
+}
+#error{
+    color: red;
+}
+#winner{
+    color:green;
+    font-size:1.3em;
+}
+
+@media all and (min-width: 768px){
+    #code{
+        grid-template-columns: repeat(35, 1fr);
+    }
+}
